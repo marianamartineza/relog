@@ -1,0 +1,14 @@
+ 
+ html, body{
+    background-color: black;
+    font-size: 2rem;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ button{
+    padding: 15px;
+    font-size: 1.3rem;
+    background-color: aqua;
+    margin-right: 5px;
+ }
