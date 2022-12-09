@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en <Relog/> debe hacer match con el snapshot 1`] = `
+<div>
+  <p
+    data-testid="test-hour"
+  >
+    12
+    :
+    0
+     
+    AM
+  </p>
+  <button
+    aria-label="btn-hora"
+  >
+    Hora
+  </button>
+  <button
+    aria-label="btn-minuto"
+  >
+    Minutos
+  </button>
+  <button
+    aria-label="btn-reset"
+  >
+    Reiniciar
+  </button>
+</div>
+`;
