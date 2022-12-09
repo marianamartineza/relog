@@ -41,10 +41,10 @@ export const Relog = ({hora,min,tiempo}) => {
 
     return(
         <>
-        <p>{hour}:{minute} {time}</p>
-        <button onClick={AddHour}>Hora</button>
-        <button onClick={AddMinute}>Minutos</button>
-        <button onClick={reset}>Reiniciar</button>
+        <p data-testid='test-hour'>{hour}:{minute} {time}</p>
+        <button aria-label='btn-hora' onClick={AddHour}>Hora</button>
+        <button aria-label='btn-minuto' onClick={AddMinute}>Minutos</button>
+        <button aria-label='btn-reset' onClick={reset}>Reiniciar</button>
         </>
     );
 
