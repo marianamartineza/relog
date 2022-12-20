@@ -8,35 +8,37 @@ export const Relog = ({hora,min,tiempo}) => {
     const [time, setTime] = useState(tiempo);
 
     const AddHour = () => {
-        if(hour<12){
+        if(hour<11){
             setHour(hour+1);
-        }else{
-            setHour(1);
+        }else if(hour==11){
+            setHour(hour+1);
             Evaluar(time);
+        }else{//cuando sean las 12 cambiar a 1 
+            setHour(1);
         }
     }
 
     const AddMinute = () => {
-        if(minute<60){
+        if(minute<59){
             setMinute(minute+1)
         }else{
-            setMinute(min);
+            setMinute(0);
             AddHour();
         }
     }
 
     const Evaluar = (time) => {
         if(time == 'AM'){
-            setTime('PM');
+                setTime('PM');
         }else if(time == 'PM'){
-            setTime('AM');
+                setTime('AM');
         }
     }
 
     const reset = () => {
         setHour(12);
-        setMinute(min);
-        setTime(tiempo);
+        setMinute(0);
+        setTime('AM');
     }
 
     return(

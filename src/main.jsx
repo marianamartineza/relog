@@ -8,6 +8,6 @@ import './styles.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         {/* <Relog hora={0} min={0} tiempo="AM"/> */}
-        <Relog />
+        <Relog hora={11} min={59} tiempo="PM"/>
     </React.StrictMode>
 );
