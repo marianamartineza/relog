@@ -9,7 +9,7 @@ export const Relog = ({ hora, min, tiempo }) => {
   const AddHour = () => {
     if (hour < 11) {
       setHour(hour + 1);
-    } else if (hour == 11) {
+    } else if (hour === 11) {
       setHour(hour + 1);
       Evaluar(time);
     } else {
@@ -28,9 +28,9 @@ export const Relog = ({ hora, min, tiempo }) => {
   };
 
   const Evaluar = time => {
-    if (time == 'AM') {
+    if (time === 'AM') {
       setTime('PM');
-    } else if (time == 'PM') {
+    } else if (time === 'PM') {
       setTime('AM');
     }
   };

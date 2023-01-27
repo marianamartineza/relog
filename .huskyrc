@@ -1,0 +1,4 @@
+# ~/.huskyrc
+# This loads nvm.sh and sets the correct PATH before running hook
+export NVS_DIR="$HOME/.nvs"
+[ -s "$NVS_DIR/nvs.sh" ] && \. "$NVS_DIR/nvs.sh"
