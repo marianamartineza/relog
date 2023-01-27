@@ -9,8 +9,8 @@
     "preview": "vite preview",
     "test": "jest --watchAll",
     "format": "prettier --write .",
-    "lint": "eslint --fix . --ext .js,.jsx",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
