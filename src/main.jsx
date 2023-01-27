@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Relog } from './Relog';
 import './styles.css';
+// import {test} from './shared/utils';
 
 // const App = () => console.log('prueba react');
 
